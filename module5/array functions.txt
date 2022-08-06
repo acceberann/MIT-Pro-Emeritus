@@ -1,0 +1,13 @@
+Given an array, which is an ordered list of items, we can use functions to change the items and their order.
+myDrums = ['snare' , 'bass' , 'tom' , 'cymbal' , 'hi-hats'] is an example of an array.  It contains five items in a given order.
+We can use the SPLICE function to cut out a section of the array or to add more items to the array - arrayName.splice(start, deleteCount, itemN)  
+For example:
+myDrums.splice(2,1) will remove one item at index position 2.  The first number is the index number where the deletion will begin and the second number is the number of items to be removed.  The function will return Array = ['tom']. 
+myDrums = ['snare' , 'bass' , 'cymbal' , 'hi-hats']
+We can put the removed item back in the array by using the .splice function as well:
+myDrums.splice(2,0,'tom') which will return Array =[] - an empty array
+myDrums = ['snare' , 'bass' , 'tom' , 'cymbal' , 'hi-hats']
+The SLICE function will create a copy of the specified section in the function argument - arrayName.slice(start,end)
+For example:
+myDrums.slice(1,4) will return an array copy of the items starting at index 1 up to, but not including, index 4 - Array = ['bass' , 'tom' , 'cymbal']
+The SPLIT function will allow us to 
